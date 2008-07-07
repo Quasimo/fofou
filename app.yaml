@@ -4,6 +4,9 @@ runtime: python
 api_version: 1
 
 handlers:
+- url: /xn/.*
+  script: gae-rest/xn.py
+  
 - url: /static
   static_dir: static
 
